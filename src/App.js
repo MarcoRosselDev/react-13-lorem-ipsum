@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import data from "./data";
 function App() {
-  return <h2>lorem ipsum project setup</h2>;
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState([]);
+  return (
+    <section className="section-center">
+      <h3>tired of boring lorem ipsum ?</h3>
+      <form className="lore-form"></form>
+    </section>
+  );
 }
 
 export default App;
