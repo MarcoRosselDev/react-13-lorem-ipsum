@@ -5,6 +5,7 @@ function App() {
   const [text, setText] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("hola mundo");
   };
   return (
     <section className="section-center">
