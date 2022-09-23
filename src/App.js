@@ -5,7 +5,7 @@ function App() {
   const [text, setText] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("hola mundo");
+    setText(data);
   };
   return (
     <section className="section-center">
@@ -24,12 +24,9 @@ function App() {
         </button>
       </form>
       <article className="lorem-text">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut
-          necessitatibus soluta maiores animi quaerat hic quas nostrum vero
-          nesciunt eaque amet, asperiores culpa odit iusto. Quas numquam cum
-          eaque.
-        </p>
+        {text.map((item, index) => {
+          return <p key={index}>{item}</p>;
+        })}
       </article>
     </section>
   );
