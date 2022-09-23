@@ -18,7 +18,18 @@ function App() {
           value={count}
           onChange={(e) => setCount(e.target.value)}
         />
+        <button className="btn" type="submit">
+          generate
+        </button>
       </form>
+      <article className="lorem-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut
+          necessitatibus soluta maiores animi quaerat hic quas nostrum vero
+          nesciunt eaque amet, asperiores culpa odit iusto. Quas numquam cum
+          eaque.
+        </p>
+      </article>
     </section>
   );
 }
